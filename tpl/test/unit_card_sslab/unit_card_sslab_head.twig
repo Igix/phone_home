@@ -1,0 +1,54 @@
+<head>
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="{{description}}">
+    <meta name="keywords" content="{{keywords}}">
+    <meta name="author" content="{{author}}">
+    <link rel="shortcut icon" href="{{shortcut}}">
+
+    <link rel="stylesheet" type="text/css" href="{{bootstrap_min_css}}" />
+    <link rel="stylesheet" type="text/css" href="{{bootstrap_theme_min_css}}" />
+
+    <link rel="stylesheet" type="text/css" href="{{bootstrap_modal_bs3patch_css}}" />
+    <link rel="stylesheet" type="text/css" href="{{bootstrap_modal_css}}" />
+
+    <link rel="stylesheet" type="text/css" href="{{bootstrap_form_helpers_css}}" />
+
+    <link rel="stylesheet" type="text/css" href="{{elastislide_css}}" />
+    <link rel="stylesheet" type="text/css" href="{{elastislide_custom_css}}" />
+
+    <link rel="stylesheet" type="text/css" href="{{light_gallery_css}}" />
+
+    {% for key in self_css %}
+    <link rel="stylesheet" type="text/css" href="{{key}}" />
+    {% endfor %}
+
+    <script type="text/javascript" src="{{jquery_js}}"></script>
+    <script type="text/javascript" src="{{md5_js}}"></script>
+
+    <script type="text/javascript" src="{{bootstrap_min_js}}"></script>
+    <script type="text/javascript" src="{{bootstrap_modalmanager_js}}"></script>
+    <script type="text/javascript" src="{{bootstrap_modal_js}}"></script>
+
+    <script type="text/javascript" src="{{bootstrap_form_helpers_js}}"></script>
+
+    <script type="text/javascript" src="{{elastislide_modernizr_custom_js}}"></script>
+    <script type="text/javascript" src="{{jquerypp_custom_js}}"></script>
+    <script type="text/javascript" src="{{jquery_elastislide_js}}"></script>
+
+    <script type="text/javascript" src="{{light_gallery_js}}"></script>
+
+    <script type="text/javascript" src="{{ec_swfobject_js}}"></script>
+    <script type="text/javascript" src="{{ec_js}}"></script>
+
+    <script type="text/javascript" src="{{jquery_maskedinput_js}}"></script>
+    <script type="text/javascript" src="{{jquery_yiiactiveform_js}}"></script>
+
+    <script type="text/javascript" src="{{editor_js}}"></script>
+    <script type="text/javascript" src="{{check_js}}"></script>
+    {% for key in self_js %}
+        <script type="text/javascript" src="{{key}}"></script>
+    {% endfor %}
+    <script type="text/javascript" src="{{modal_js}}"></script>
+</head>

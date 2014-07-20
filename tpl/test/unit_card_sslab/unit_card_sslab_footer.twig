@@ -1,0 +1,28 @@
+<!-- панель footer-->
+<div class="row clear footer" id="footer">
+    <div class="col-md-5 pay_method">
+
+        <img class="img-thumbnail" src="{{img_payment_src}}" alt="Способы оплаты: Visa, Mastercard, Qiwi, Paypal">
+    </div>
+    <div class="col-md-5 social">
+    </div>
+</div>
+<!-- панель снизу-->
+<div class="navbar navbar-fixed-bottom panel_bottom">
+    <div class="navbar-inner">
+        <div class="container">
+            <div class="">
+                <div class="panel_bottom_block_1">
+                    <button anchor="#top" type="button" class="btn btn-default btn_top"><i class="glyphicon glyphicon-arrow-up"></i></button>
+                    <a href="#" class='btn btn-default btn_feedback' data-target='#feedback' data-toggle='modal'><i class="glyphicon glyphicon-envelope"></i></a>
+                </div>
+                <div class="panel_bottom_block_3">
+                    <button type="button" class="btn btn-link btn_compare"><i class="glyphicon glyphicon-th-list"></i> Сравнение <span class="badge">0</span></button>
+                    <button type="button" class="btn btn-link btn_bookmark"><i class="glyphicon glyphicon-bookmark"></i> Закладки <span class="badge">0</span></button>
+                    <button type="button" class="btn btn-link btn_basket" data-target='#basket' data-toggle='modal'><i class="glyphicon glyphicon-briefcase"></i> Корзина <span class="badge">{{shopping_basket_items_cnt}}</span></button>
+                    <button type="button" class="btn btn-default btn_order">Оформить заказ</button>
+                </div>
+            </div>
+      </div>
+    </div>
+</div>

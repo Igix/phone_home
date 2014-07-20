@@ -1,0 +1,19 @@
+#feedback #btn_type_msg button {
+    height: 100px;
+    width: 120px;
+    border-color: transparent;
+}
+
+#feedback #btn_type_msg button.active {
+    border-color: red;
+}
+
+#feedback #feedback_form input,#feedback #feedback_form textarea {
+
+}
+
+#feedback #feedback_form input.error, #feedback #feedback_form textarea.error,
+#buy_1_click input.error, #buy_1_click textarea.error
+{
+    border-color: red;
+}

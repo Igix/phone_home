@@ -1,0 +1,768 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Документ без названия</title>
+
+<link rel="icon" type="image/png" href="i/favicon.png" />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+ <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script><script src="js/tooltip.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">$(document).ready(function(){
+$(window).scroll(function () {if ($(this).scrollTop() > 0) {$('#scroller').fadeIn();} else {$('#scroller').fadeOut();}});
+$('#scroller').click(function () {$('body,html').animate({scrollTop: 0}, 400); return false;});
+});</script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+	
+	$('.item .availability').hover(
+		function() {
+			$(this).find('.hint').addClass('show-block');
+		},
+		function() {
+			$(this).find('.hint').hideClass('show-block');
+		});
+});
+
+$(function(){
+    $("[rel=tooltip]").tooltip();
+});
+
+
+ </script>	
+		<script type="text/javascript" src="js/jquery.montage.min.js"></script>
+		<script type="text/javascript">
+	
+
+	
+			$(function() {
+				/* 
+				 * just for this demo:
+				 */
+				var $container 	= $('#am-container'),
+					$imgs		= $container.find('img').hide(),
+					totalImgs	= $imgs.length,
+					cnt			= 0;
+				
+				$imgs.each(function(i) {
+					var $img	= $(this);
+					$('<img/>').load(function() {
+						++cnt;
+						if( cnt === totalImgs ) {
+							$imgs.show();
+							$container.montage({
+								fillLastRow				: true,
+								alternateHeight			: true,
+								alternateHeightRange	: {
+									min	: 90,
+									max	: 240
+								}
+							});
+							
+							/* 
+							 * just for this demo:
+							 */
+							$('#overlay').fadeIn(300);
+						}
+					}).attr('src',$img.attr('src'));
+				});	
+				
+			});
+		</script>
+
+ <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+ 
+
+<link href="css/structImages/style.css" type="text/css" rel="stylesheet">
+<link href="css/structImages/resert.css" type="text/css" rel="stylesheet">
+	
+<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+<header>
+    <div class="row">
+		<div class=" col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+   <a href="#" class="logo"><img  src="i/logo.png" /></a>
+        </div>
+		<div class=" col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+        
+                <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 navbar-right">
+		    <div class="row right_panel">
+                    	<div class="ava"></div>
+                        <div class="basket glyphicon glyphicon-shopping-cart"><div class="gb_Ma">2</div></div>
+                        <div class="favorit glyphicon glyphicon-heart"> <div class="gb_Ma">2</div></div>
+                        <div class="ask glyphicon glyphicon-question-sign"><div class="gb_Ma">2</div></div>
+                        <div class="bell"><div class="gb_Ma">2</div></div>
+	                    <div class="name_user right"><a href="#">Игорь</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="row search_dread">
+		<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+             <div class="header_text center">
+                <ol class="breadcrumb">
+                  <li><a href="#">Thailand</a></li>
+                  <li><a href="#">Chomburi</a></li>
+                  <li><a href="#">Pattaya</a></li>
+                  <li class="active">Hotels<span class="description"> (8678) вариантов размещения </span></li>
+                </ol>             
+             
+             </div>
+        </div>
+	</div>    
+</header>
+<div class="row">
+		<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+           <h1 class="center">Отдых в Тайланде </h1>
+            <div class="text_search_menu center"><span>Ищите по интересам</span> <a href="#">Шопинг</a> <a href="#">Изысканная кухня</a> <a href="#">История</a> <a href="#">Музеи</a> <a href="#">Культура</a> <a href="#">...</a></div>
+
+
+<div class="search_box">
+<!--search-->
+
+			<div class="input-group">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                     <span class="btn btn-default glyphicon glyphicon-search">&nbsp;</span>
+                    </span>
+            </div>
+            
+            
+            
+            <!--xs--> 	
+            <div class="box_search_pop">
+            <a class="btn search" data-toggle="modal" href="#myModal" >&nbsp;</a>
+               <div class="modal" id="myModal">
+               <div class="box_modal_search">
+                <div class="modal-header">
+                <button class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                            <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                     <span class="btn btn-default glyphicon glyphicon-search">&nbsp;</span>
+                    </span>
+                    </div>
+				</div>
+            </div>
+            </div> 
+            </div>
+            <!--//xs-->
+<!--//search-->
+            
+</div>
+
+<!--box filters-->        
+<div class="box_filters">    
+
+<span class="cons ">Параметр <span class="glyphicon glyphicon-remove"></span></span>    
+
+<!-- скрытый параметр что б скрыть параметр при клике-->
+<span class="cons hide ">Параметр <span class="glyphicon glyphicon-remove"></span></span>    
+<!-- // скрытый параметр -->
+
+<span class="cons ">Параметр ввв <span class="glyphicon glyphicon-remove"></span></span>    
+<span class="cons ">Парам <span class="glyphicon glyphicon-remove"></span></span>    
+<span class="cons ">Параметр ввв <span class="glyphicon glyphicon-remove"></span></span>    
+<span class="cons ">Параметр <span class="glyphicon glyphicon-remove"></span></span>    
+<span class="cons ">Пghjkghjkjаметр ввв <span class="glyphicon glyphicon-remove"></span></span>    
+<span class="cons ">Паметр <span class="glyphicon glyphicon-remove"></span></span>    
+<span class="cons ">Пар ввв <span class="glyphicon glyphicon-remove"></span></span>    
+<span class="cons ">Параметр <span class="glyphicon glyphicon-remove"></span></span>    
+<span class="cons ">Параметр ввв <span class="glyphicon glyphicon-remove"></span></span>    
+<span class="cons ">Параметр <span class="glyphicon glyphicon-remove"></span></span>    
+
+
+<span class="clear_all"><a href="#">Очистить фильтр</a></span>    
+
+        
+</div>        
+<!--//box filters-->        
+
+
+
+
+
+
+
+
+
+
+        </div>  
+</div>
+
+
+
+
+<!--box_catalog-->
+<div class="row">
+
+
+
+
+
+
+
+
+
+				<!--	THE PORTFOLIO ENTRIES	-->
+				<div id="sbiz5219" class="showbiz item">
+					<!-- THE OVERFLOW HOLDER CONTAINER, DONT REMOVE IT !! -->
+					<div style="height: 554px;" class="overflowholder">
+						<!-- LIST OF THE ENTRIES -->
+						<ul class="hlisting">
+
+							<!-- AN ENTRY HERE WITH PREDEFINED MEDIA SKIN-->
+							<li  class="item">
+
+										<div class="availability">
+											<span class="in_stock">
+												<span class="hint">В&nbsp;наличии</span>
+											</span>
+										</div>
+
+										<!-- THE MEDIA HOLDER -->
+										<div class="item-info">
+											<div class="photo">
+												<img alt="" src="i/modern1.jpg">
+											</div>
+										</div><!-- END OF MEDIA HOLDER -->
+
+										<div class="darkhover"></div>
+
+										<div class="detailholder">
+											<div class="fn">HAVE FUN EVERY DAY EVEN IN YOUR JOB</div>
+											<div class="divide20"></div>
+											<p style="display: none; height: 66px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;" class="description">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat.
+													</p><div class="divide20"></div>
+											<p></p>
+											<!-- THE POST INFOS AND READ MORE BUTTON -->
+											<div class="listing-action leftfloat">
+												<span class="sale">Акция -20%</span>
+												<span class="price sale">5500 руб</span>
+											</div>
+											<div class="hreview-feedback rightfloat"><a href="#">READ MORE</a></div>
+											<div class="sb-clear"></div><!-- END OF POST INFOS AND READ MORE BUTTON -->
+										</div>
+
+
+							</li><!-- END OF ENTRY -->
+
+							<!-- AN ENTRY HERE WITH PREDEFINED MEDIA SKIN-->
+							<li  class="item">
+
+										<div class="availability">
+											<span class="out_of_stock">
+												<span class="hint">Отсутствует</span>
+											</span>
+										</div>
+
+										<!-- THE MEDIA HOLDER -->
+										<div class="item-info">
+											<div class="photo">
+												<img alt="" src="i/modern2.jpg">
+											</div>
+										</div><!-- END OF MEDIA HOLDER -->
+
+										<div class="darkhover"></div>
+
+										<div class="detailholder">
+											<div class="fn">HAVE FUN EVERY DAY EVEN IN YOUR JOB</div>
+											<div class="divide20"></div>
+											<p style="display: none; height: 66px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;" class="description">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat.
+													</p><div class="divide20"></div>
+											<p></p>
+											<!-- THE POST INFOS AND READ MORE BUTTON -->
+											<div class="listing-action leftfloat">
+												<span class="rent">Аренда</span>
+												<span class="price rent">5500 руб</span>
+											</div>
+											<div class="hreview-feedback rightfloat"><a href="#">READ MORE</a></div>
+											<div class="sb-clear"></div><!-- END OF POST INFOS AND READ MORE BUTTON -->
+										</div>
+
+
+							</li><!-- END OF ENTRY -->							<!-- AN ENTRY HERE WITH PREDEFINED MEDIA SKIN-->
+							<li  class="item">
+
+										<div class="availability">
+											<span class="preorder">
+												<span class="hint">Предзаказ</span>
+											</span>
+										</div>
+
+										<!-- THE MEDIA HOLDER -->
+										<div class="item-info">
+											<div class="photo">
+												<img alt="" src="i/modern1.jpg">
+											</div>
+										</div><!-- END OF MEDIA HOLDER -->
+
+										<div class="darkhover"></div>
+
+										<div class="detailholder">
+											<div class="fn">HAVE FUN EVERY DAY EVEN IN YOUR JOB</div>
+											<div class="divide20"></div>
+											<p style="display: none; height: 66px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;" class="description">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat.
+													</p><div class="divide20"></div>
+											<p></p>
+											<!-- THE POST INFOS AND READ MORE BUTTON -->
+											<div class="listing-action leftfloat">
+												<span class="sell">Цена</span>
+												<span class="price">5500 руб</span>
+											</div>
+											<div class="hreview-feedback rightfloat"><a href="#">READ MORE</a></div>
+											<div class="sb-clear"></div><!-- END OF POST INFOS AND READ MORE BUTTON -->
+										</div>
+
+
+							</li><!-- END OF ENTRY -->
+
+							<!-- AN ENTRY HERE WITH PREDEFINED MEDIA SKIN-->
+							<li  class="item">
+
+										<div class="availability">
+											<span class="in_stock">
+												<span class="hint">В&nbsp;наличии</span>
+											</span>
+										</div>
+
+										<!-- THE MEDIA HOLDER -->
+										<div class="item-info">
+											<div class="photo">
+												<img alt="" src="i/modern2.jpg">
+											</div>
+										</div><!-- END OF MEDIA HOLDER -->
+
+										<div class="darkhover"></div>
+
+										<div class="detailholder">
+											<div class="fn">HAVE FUN EVERY DAY EVEN IN YOUR JOB</div>
+											<div class="divide20"></div>
+											<p style="display: none; height: 66px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;" class="description">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat.
+													</p><div class="divide20"></div>
+											<p></p>
+											<!-- THE POST INFOS AND READ MORE BUTTON -->
+											<div class="listing-action leftfloat">
+												<span class="sell">Цена</span>
+												<span class="price">5500 руб</span>
+											</div>
+											<div class="hreview-feedback rightfloat"><a href="#">READ MORE</a></div>
+											<div class="sb-clear"></div><!-- END OF POST INFOS AND READ MORE BUTTON -->
+										</div>
+
+
+							</li><!-- END OF ENTRY -->							<!-- AN ENTRY HERE WITH PREDEFINED MEDIA SKIN-->
+							<li  class="item">
+
+										<div class="availability">
+											<span class="preorder">
+												<span class="hint">Предзаказ</span>
+											</span>
+										</div>
+
+										<!-- THE MEDIA HOLDER -->
+										<div class="item-info">
+											<div class="photo">
+												<img alt="" src="i/modern1.jpg">
+											</div>
+										</div><!-- END OF MEDIA HOLDER -->
+
+										<div class="darkhover"></div>
+
+										<div class="detailholder">
+											<div class="fn">HAVE FUN EVERY DAY EVEN IN YOUR JOB</div>
+											<div class="divide20"></div>
+											<p style="display: none; height: 66px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;" class="description">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat.
+													</p><div class="divide20"></div>
+											<p></p>
+											<!-- THE POST INFOS AND READ MORE BUTTON -->
+											<div class="listing-action leftfloat">
+												<span class="rent">Аренда</span>
+												<span class="price rent">5500 руб</span>
+											</div>
+											<div class="hreview-feedback rightfloat"><a href="#">READ MORE</a></div>
+											<div class="sb-clear"></div><!-- END OF POST INFOS AND READ MORE BUTTON -->
+										</div>
+
+
+							</li><!-- END OF ENTRY -->
+
+							<!-- AN ENTRY HERE WITH PREDEFINED MEDIA SKIN-->
+							<li  class="item">
+
+										<div class="availability">
+											<span class="in_stock">
+												<span class="hint">В&nbsp;наличии</span>
+											</span>
+										</div>
+
+										<!-- THE MEDIA HOLDER -->
+										<div class="item-info">
+											<div class="photo">
+												<img alt="" src="i/modern2.jpg">
+											</div>
+										</div><!-- END OF MEDIA HOLDER -->
+
+										<div class="darkhover"></div>
+
+										<div class="detailholder">
+											<div class="fn">HAVE FUN EVERY DAY EVEN IN YOUR JOB</div>
+											<div class="divide20"></div>
+											<p style="display: none; height: 66px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;" class="description">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat.
+													</p><div class="divide20"></div>
+											<p></p>
+											<!-- THE POST INFOS AND READ MORE BUTTON -->
+											<div class="listing-action leftfloat">
+												<span class="sale">Акция -20%</span>
+												<span class="price sale">5500 руб</span>
+											</div>
+											<div class="hreview-feedback rightfloat"><a href="#">READ MORE</a></div>
+											<div class="sb-clear"></div><!-- END OF POST INFOS AND READ MORE BUTTON -->
+										</div>
+
+
+							</li><!-- END OF ENTRY -->
+
+							<!-- AN ENTRY HERE WITH PREDEFINED MEDIA SKIN-->
+							<li  class="item">
+
+										<div class="availability">
+											<span class="in_stock">
+												<span class="hint">В&nbsp;наличии</span>
+											</span>
+										</div>
+
+										<!-- THE MEDIA HOLDER -->
+										<div class="item-info">
+											<div class="photo">
+												<img alt="" src="i/modern1.jpg">
+											</div>
+										</div><!-- END OF MEDIA HOLDER -->
+
+										<div class="darkhover"></div>
+
+										<div class="detailholder">
+											<div class="fn">HAVE FUN EVERY DAY EVEN IN YOUR JOB</div>
+											<div class="divide20"></div>
+											<p style="display: none; height: 66px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;" class="description">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat.
+													</p><div class="divide20"></div>
+											<p></p>
+											<!-- THE POST INFOS AND READ MORE BUTTON -->
+											<div class="listing-action leftfloat">
+												<span class="sale">Акция -20%</span>
+												<span class="price sale">5500 руб</span>
+											</div>
+											<div class="hreview-feedback rightfloat"><a href="#">READ MORE</a></div>
+											<div class="sb-clear"></div><!-- END OF POST INFOS AND READ MORE BUTTON -->
+										</div>
+
+
+							</li><!-- END OF ENTRY -->
+
+							<!-- AN ENTRY HERE WITH PREDEFINED MEDIA SKIN-->
+							<li  class="item">
+
+										<div class="availability">
+											<span class="out_of_order">
+												<span class="hint">ОТСУТСТВУЕТ</span>
+											</span>
+										</div>
+
+										<!-- THE MEDIA HOLDER -->
+										<div class="item-info">
+											<div class="photo">
+												<img alt="" src="i/modern1.jpg">
+											</div>
+										</div><!-- END OF MEDIA HOLDER -->
+
+										<div class="darkhover"></div>
+
+										<div class="detailholder">
+											<div class="fn">HAVE FUN EVERY DAY EVEN IN YOUR JOB</div>
+											<div class="divide20"></div>
+											<p style="height: 66px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px; display: none;" class="description">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat.
+													</p><div class="divide20"></div>
+											<p></p>
+											<!-- THE POST INFOS AND READ MORE BUTTON -->
+											<div class="listing-action leftfloat">
+												<span class="rent">Аренда</span>
+												<span class="price rent">5500 руб</span>
+											</div>
+											<div class="hreview-feedback rightfloat"><a href="#">READ MORE</a></div>
+											<div class="sb-clear"></div><!-- END OF POST INFOS AND READ MORE BUTTON -->
+										</div>
+
+
+							</li><!-- END OF ENTRY -->
+
+							<!-- AN ENTRY HERE WITH PREDEFINED MEDIA SKIN-->
+							<li  class="item">
+
+										<div class="availability">
+											<span class="preorder">
+												<span class="hint">Предзаказ</span>
+											</span>
+										</div>
+
+										<!-- THE MEDIA HOLDER -->
+										<div class="item-info">
+											<div class="photo">
+												<img alt="" src="i/modern2.jpg">
+											</div>
+										</div><!-- END OF MEDIA HOLDER -->
+
+										<div class="darkhover"></div>
+
+										<div class="detailholder">
+											<div class="fn">HAVE FUN EVERY DAY EVEN IN YOUR JOB</div>
+											<div class="divide20"></div>
+											<p style="display: none; height: 66px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;" class="description">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat.
+													</p><div class="divide20"></div>
+											<p></p>
+											<!-- THE POST INFOS AND READ MORE BUTTON -->
+											<div class="listing-action leftfloat">
+												<span class="sell">Цена</span>
+												<span class="price">5500 руб</span>
+											</div>
+											<div class="hreview-feedback rightfloat"><a href="#">READ MORE</a></div>
+											<div class="sb-clear"></div><!-- END OF POST INFOS AND READ MORE BUTTON -->
+										</div>
+
+
+							</li><!-- END OF ENTRY -->
+
+							<!-- AN ENTRY HERE WITH PREDEFINED MEDIA SKIN-->
+							<li  class="item">
+
+										<div class="availability">
+											<span class="in_stock">
+												<span class="hint">В&nbsp;наличии</span>
+											</span>
+										</div>
+
+										<!-- THE MEDIA HOLDER -->
+										<div class="item-info">
+											<div class="photo">
+												<img alt="" src="i/modern1.jpg">
+											</div>
+										</div><!-- END OF MEDIA HOLDER -->
+
+										<div class="darkhover"></div>
+
+										<div class="detailholder">
+											<div class="fn">HAVE FUN EVERY DAY EVEN IN YOUR JOB</div>
+											<div class="divide20"></div>
+											<p style="display: none; height: 66px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;" class="description">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat.
+													</p><div class="divide20"></div>
+											<p></p>
+											<!-- THE POST INFOS AND READ MORE BUTTON -->
+											<div class="listing-action leftfloat">
+												<span class="sell">Цена</span>
+												<span class="price">5500 руб</span>
+											</div>
+											<div class="hreview-feedback rightfloat"><a href="#">READ MORE</a></div>
+											<div class="sb-clear"></div><!-- END OF POST INFOS AND READ MORE BUTTON -->
+										</div>
+
+
+							</li><!-- END OF ENTRY -->
+						</ul>
+						<div class="sbclear"></div>
+					</div> <!-- END OF OVERFLOWHOLDER -->
+					<div class="sbclear"></div>
+				</div>
+			</div><!-- END OF DEMO -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+<!-- // box_catalog-->
+
+
+
+
+<div class="container">
+
+
+<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12 ">
+       <input type="button" class=" btn btn-default center more " value="Показывать еще 30">
+        </div>
+</div>
+
+
+
+<!--subskribe-->
+<div class="row subs">
+		<div class="col-sm-0 col-md-1 col-lg-1 "> </div>
+		<div class=" col-xs-5 col-sm-4 col-md-4 col-lg-4 unsubs "> 
+            <h3>Отели за полцены!</h3>
+            Подпишитесь на рассылку эксклюзивных предложений
+            </div>
+		<div class=" col-xs-7 col-sm-5 col-md-4 col-lg-4 "> 
+			<input type="text" placeholder="Ваш адресс электронной почты" id="inputEmail" class="form-control">
+		</div>
+		<div class=" col-xs-7 col-sm-3 col-md-2 col-lg-2 "> 
+			<button class="btn btn-primary" type="submit">Подписаться</button>
+        </div>
+		<div class="col-sm-0 col-md-1 col-lg-1 "> </div>
+</div>
+<!--//subskribe-->
+<!--banner 580 -->
+<div class="row banner_big">
+
+<div class="banner_580">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивный низ -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1775074057792174"
+     data-ad-slot="7145276142"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+</div>
+<!--//banner 580 -->
+
+
+
+
+<!--footer-->
+<div class="row">
+
+
+<!--pay-->
+<div class="box_pay">
+	<div><img src="i/ico_1.jpg"  /></div>
+	<div><img src="i/ico_2.jpg"  /></div>
+	<div><img src="i/ico_3.jpg"  /></div>
+	<div><img src="i/ico_4.jpg"  /></div>
+	<div><img src="i/ico_5.jpg"  /></div>
+	<div><img src="i/ico_6.jpg"  /></div>
+</div>
+<!--/pay-->
+<!--footer link-->
+<div class="box_footer_link">
+    <ul class="navbar-nav">
+        <li><a href="#">Agent Login</a></li>
+        <li><a href="#">Owner Login</a></li>
+        <li><a href="#">Translator Login</a></li>
+        <li><a href="#">Customer Login</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Availabilty</a></li>
+    </ul>
+</div>
+<!--/footer link-->
+
+<div class="copyrigh">&copy; 2003-2014 by Thailand Holiday Homes Contact us Thailand: +66 (0) 387 57142, or Email us: <a href="mailto:sales@thailandholidayhomes">sales@thailandholidayhomes</a></div>
+
+
+
+
+</div>
+<!--//footer-->
+
+
+
+</div>
+<div id="scroller" class="b-top" style="display: none;"><span class="b-top-but"></span></div>
+
+<!-- Bottom Panel -->
+<div id="bottom-panel">
+		<ul class="left">
+			<li><span class="icon"></span></li>
+			<li><a class="feedback" href="#"><span class="icon"></span>Обратная связь</a></li>
+		</ul>
+		<ul class="right">
+			<li class="eq-1"><a class="comparison" href="#"><span class="icon icon-comparison"></span><span>Сравнение</span><span class="count count-0">0</span></a></li>
+			<li class="eq-2"><a class="bookmark" href="#"><span class="icon icon-bookmark"></span><span>Закладки</span><span class="count count-0">0</span></a></li>
+			<li class="eq-3"><a class="basket" href="#"><span class="icon icon-basket"></span><span class="span-2">Корзина</span><span class="count count-1">3</span><span class="sum">5 110 руб.</span></a></li>
+			<li class="eq-4"><a class="checkout" href="#">Оформить заказ</a></li>
+		</ul>
+	</div>
+<!-- #bottom-panel -->
+
+</body>
+</html>

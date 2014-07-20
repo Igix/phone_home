@@ -1,0 +1,68 @@
+<!-- buy_1_click modal -->
+<div id="buy_1_click" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Мы Вам сегодня перезвоним</h4>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12">
+                <p><label>Ваше имя *</label> <input class="form-control" type="text" name="user_name" id="user_name"/></p>
+                <p><label>Телефон (моб)*</label> <input name="phone" id="phone" type="text"  maxlength="32" placeholder="Введите номер телефона в формате 7(123)-456-7890" class="form-control input-sm"></p>
+                <p><label>Примечание</label>
+                    <textarea class="form-control" id="feedback_msg" name="feedback_msg"  rows="12" placeholder="Введите текст примечания"></textarea>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="btn_wait_call">Жду звонка</button>
+    </div>
+</div>
+
+<!--unit_alike_more-->
+<div id="unit_alike_more" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Похожие товары</h4>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12 unit_alike_block">
+                <table class="table table-hover table_basket">
+                    <tbody>
+                    {% for key,value in unit_alike %}
+                        <tr>
+                            <td rowspan="2">
+                                {% if unit_alike[key]["img_card"]|length > 0 %}
+                                    <img src="{{unit_alike[key]["img_card"][0]}}/thumb.png" alt="" class="img-thumbnail" style="max-height: 100px; max-width: 100px;">
+                                {% else %}
+                                    <img src="{{no_image_src}}" alt="" class="img-thumbnail" style="max-height: 100px; max-width: 100px;">
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if unit_alike[0]["u_ua_unit_id"] is empty %}
+                                    <a class="btn btn-link p-name">{{unit_alike[key]["ua_name"]}}</a>
+                                {% else %}
+                                    <a href="http://ice-taxi.ru/phone_home/unit?unit_id={{unit_alike[key]["u_ua_unit_id"]}}" class="btn btn-link p-name" target="_blank">{{unit_alike[key]["ua_name"]}}</a>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                {% if unit_alike[key]["u_ua_unit_id"] is empty %}
+                                    <p><data itemprop="price" class="p-price" value="0"></data></p>
+                                {% else %}
+                                    <p><data itemprop="price" class="p-price" value="{{unit_alike[key]["u_ua_cost"]}}"><strong>{{unit_alike[key]["u_ua_cost"]}} руб.</strong></data></p>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+    </div>
+</div>
