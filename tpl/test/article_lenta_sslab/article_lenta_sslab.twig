@@ -203,7 +203,7 @@
                             </h2>
                             <time class="updated" datetime="{{value["d_add_se"]}}" pubdate>{{value["d_add"]}}</time>
                             <div class="entry-content">
-                                {% set txt = value["txt"] %}
+                                {% set txt = value["txt_only"] %}
                                 {% set txt_small = txt[:300] %}
                                 <p>
                                     {{txt_small|raw}}...
@@ -334,7 +334,7 @@
     <div id="scroller" class="b-top" style="display: none;"><span class="b-top-but"></span></div>
 
     <!-- Bottom Panel -->
-    <div id="bottom-panel">
+    <!--<div id="bottom-panel">
 		<ul class="left">
 			<li><span class="icon"></span></li>
 			<li>
@@ -347,7 +347,7 @@
 		<ul class="right">
 			<!--<li class="eq-1"><a class="comparison" href="#"><span class="icon icon-comparison"></span><span>Сравнение</span><span class="count count-0">0</span></a></li>
 			<li class="eq-2"><a class="bookmark" href="#"><span class="icon icon-bookmark"></span><span>Закладки</span><span class="count count-0">0</span></a></li>-->
-			<li class="eq-3">
+			<!--<li class="eq-3">
                 <a href="#" class="btn_basket basket" data-target='#basket' data-toggle='modal'>
                     <span class="icon icon-basket"></span>
                     <span class="span-2">Корзина</span>
@@ -357,7 +357,7 @@
             </li>
 			<li class="eq-4"><a class="checkout" href="#">Оформить заказ</a></li>
 		</ul>
-	</div>
+	</div>-->
     <!-- #bottom-panel -->
 
     {% include 'article_lenta_sslab_modal.twig' %}
