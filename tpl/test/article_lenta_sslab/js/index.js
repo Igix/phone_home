@@ -421,7 +421,7 @@ $(function()
 
         $.fn.t.modal_tags_list = {};
 
-        $.fn.t.article_show_cnt = 3;
+        $.fn.t.article_show_cnt = 5;
 
         $.fn.t.data = {};
     })($);
