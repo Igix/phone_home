@@ -22,7 +22,7 @@ $(function()
                 $('#scroller').click(function () {$('body,html').animate({scrollTop: 0}, 400); return false;});
                 $("[rel=tooltip]").tooltip();
 
-                $(".entry-content").find("img").hide();
+                $("div.hentry").not(".hentry_pic").find(".entry-content").find("img").hide();
 
                 var kc_name_str = $.fn.t.parseGetParams()["kc_name"];
                 $.fn.t.kc_name_arr_current = (kc_name_str != undefined)?kc_name_str.split(","):[];
