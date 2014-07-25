@@ -34,7 +34,11 @@ $(function()
 
                 var container_collage_plus = $("article:eq(0) p");
                 //$.fn.t.prepare_hentry_pic_montage($("article:eq(0)"));
-                $.fn.t.prepare_hentry_pic_collage(container_collage_plus);
+                var imgs = $(container_collage_plus).find("img");
+                $.fn.t.check_loadimages(imgs,function()
+                {
+                    $.fn.t.prepare_hentry_pic_collage(container_collage_plus);
+                });
 
                 //подготовим скрытый блок картинок статьи для галереи
                 var content_box = $("div.content_box");
